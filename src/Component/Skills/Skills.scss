@@ -1,0 +1,51 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+.skills {
+  padding-top: 1rem;
+  // height: 100vh;
+  background: linear-gradient(
+    180deg,
+    rgba(61, 126, 166, 0.09287464985994398) 1%,
+    rgba(61, 126, 166, 0.22172619047619047) 6%,
+    rgba(61, 126, 166, 0.09287464985994398) 49%
+  );
+  h1 {
+    font-size: 2.8rem;
+    text-align: center;
+    font-family: montserrat;
+    font-weight: 600;
+    line-height: 1.5;
+    letter-spacing: 2px;
+    color: #00587a;
+  }
+  .content {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 2rem;
+    width: 90%;
+    margin: auto;
+    li {
+      list-style: none;
+      min-width: 450px;
+      display: flex;
+      flex-grow: 1;
+      margin: 1rem;
+      background-color: #ecf2f7;
+      border-radius: 1rem;
+      border: 0.5px solid #d5e2eb;
+
+      .js {
+        background-color: black;
+      }
+      img {
+        width: 3rem;
+      }
+      p {
+        align-self: center;
+        font-size: 24px;
+        font-family: lato;
+        margin-left: 3rem;
+        color: #00587a;
+      }
+    }
+  }
+}
