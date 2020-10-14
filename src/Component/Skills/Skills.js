@@ -2,8 +2,8 @@ import React, { Component } from "react";
 import "./Skills.scss";
 import { FaNodeJs, FaCss3Alt, FaReact } from "react-icons/fa/index";
 import { DiMongodb } from "react-icons/di/index";
-import { SiJavascript } from "react-icons/si/index";
-import { AiFillHtml5 } from "react-icons/ai/index";
+import { SiJavascript, SiVisualstudiocode } from "react-icons/si/index";
+import { AiFillHtml5, AiFillGithub } from "react-icons/ai/index";
 class Skills extends Component {
   constructor(props) {
     super(props);
@@ -12,7 +12,7 @@ class Skills extends Component {
   render() {
     return (
       <div className="skills">
-        <h1>Skills</h1>
+        <h1>Skills & Tools</h1>
         <div className="content">
           <li>
             <AiFillHtml5 color="#dd502a" size="5rem" />
@@ -42,12 +42,12 @@ class Skills extends Component {
             <p> MongoDB</p>
           </li>
           <li>
-            <i>html</i>
-            <p>express</p>
+            <AiFillGithub size="5rem" />
+            <p>GitHub</p>
           </li>
           <li>
-            <i>html</i>
-            <p>express</p>
+            <SiVisualstudiocode color="#0275c4" size="5rem" />
+            <p>VS Code</p>
           </li>
         </div>
       </div>
