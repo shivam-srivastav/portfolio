@@ -15,30 +15,30 @@ class Skills extends Component {
         <h1>Skills & Tools</h1>
         <div className="content">
           <li>
-            <AiFillHtml5 color="#dd502a" size="5rem" />
+            <AiFillHtml5 color="#dd502a" size="4.5rem" />
             <p> HTML5</p>
           </li>
           <li>
-            <FaCss3Alt color="#2296f3" size="5rem" />
+            <FaCss3Alt color="#2296f3" size="4.5rem" />
             <p> CSS</p>
           </li>
           <li>
             <div className="js">
-              <SiJavascript color="rgb(238, 216, 55)" size="5rem" />
+              <SiJavascript color="rgb(238, 216, 55)" size="4.5rem" />
             </div>
             <p> JavaScript</p>
           </li>
           <li>
-            <FaReact color="#5ed3f3" size="5rem" />
+            <FaReact color="#5ed3f3" size="4.5rem" />
             <p> React</p>
           </li>
           <li>
-            <FaNodeJs color="rgb(138, 197, 42)" size="5rem" />
+            <FaNodeJs color="rgb(138, 197, 42)" size="4.5rem" />
 
             <p> Node</p>
           </li>
           <li>
-            <DiMongodb color="#4ca343" size="5rem" />
+            <DiMongodb color="#4ca343" size="4.5rem" />
             <p> MongoDB</p>
           </li>
           <li>
@@ -46,7 +46,7 @@ class Skills extends Component {
             <p>GitHub</p>
           </li>
           <li>
-            <SiVisualstudiocode color="#0275c4" size="5rem" />
+            <SiVisualstudiocode color="#0275c4" size="4.5rem" />
             <p>VS Code</p>
           </li>
         </div>

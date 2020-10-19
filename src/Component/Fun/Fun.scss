@@ -1,6 +1,6 @@
 .fun {
   position: relative;
-  height: 200px;
+  height: 400px;
   padding: 1rem;
   color: #181a1c;
   background-color: rgb(236, 242, 246);
@@ -9,7 +9,6 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -100%);
-    color: red;
     z-index: 2;
   }
   .fun-header {
@@ -47,7 +46,7 @@
   background: #181a1c;
   color: #ffe05d;
   position: relative;
-  height: 200px;
+  height: 400px;
   padding: 1rem;
   .fun-header {
     position: absolute;
@@ -71,7 +70,6 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -100%);
-    color: red;
     z-index: 2;
   }
   .hello {

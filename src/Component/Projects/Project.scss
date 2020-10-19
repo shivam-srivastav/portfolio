@@ -1,0 +1,129 @@
+.project {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 90%;
+  margin: auto;
+  .project-head {
+    h1 {
+      margin: auto;
+      font-size: 2rem;
+      text-align: center;
+      font-family: montserrat;
+      margin-bottom: 5rem;
+      font-weight: 600;
+      line-height: 1.5;
+      letter-spacing: 2px;
+      color: #00587a;
+    }
+  }
+  .project-main {
+    align-items: center;
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    .One {
+      align-self: center;
+      li {
+        border-top: 4px solid red;
+        background-color: #ff00001a;
+        .backed:hover {
+          background-color: #ff0000;
+        }
+      }
+    }
+    .Two {
+      align-self: center;
+      li {
+        margin-top: 1rem;
+      }
+      .two1 {
+        border-top: 4px solid blue;
+        background-color: #0000ff1a;
+        .backed:hover {
+          background-color: #0000ff;
+        }
+      }
+      .two2 {
+        border-top: 4px solid peru;
+        background-color: #ff00ff1a;
+        .backed:hover {
+          background-color: #ff00ff;
+        }
+      }
+    }
+    .Three {
+      align-self: center;
+      li {
+        border-top: 4px solid #4caf50;
+        background-color: #4caf501a;
+        .backed:hover {
+          background-color: #4caf50;
+        }
+      }
+    }
+    li {
+      position: relative;
+      box-sizing: content-box;
+      // padding-left: 2rem;
+      .backed {
+        cursor: pointer;
+        // padding: 1rem;
+        // display: none;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-self: center;
+        position: absolute;
+        transition: all 1s ease;
+        width: 100%;
+        height: 350px;
+        background-color: transparent;
+        color: transparent;
+      }
+      transition: 1000 ease;
+      .backed:hover {
+        transition: 1000 ease;
+        h1 {
+          align-self: center;
+          color: #fff;
+        }
+        h2 {
+          align-self: center;
+          color: #fff;
+        }
+      }
+
+      // padding: 1rem;
+      width: 350px;
+      height: 350px;
+      margin: 0.5rem;
+      // background-color: #00587a;
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      align-self: center;
+      h3 {
+        text-align: end;
+      }
+      p {
+        color: grey;
+        padding-left: 1rem;
+      }
+      h1 {
+        padding: 1rem;
+      }
+    }
+  }
+}
+
+@media (min-width: 1920px) {
+  .project {
+    .project-main {
+      li {
+        width: 450px;
+        height: 450px;
+      }
+    }
+  }
+}

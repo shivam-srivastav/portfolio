@@ -8,11 +8,26 @@ class Fun extends React.Component {
       dark: false,
       show: false,
       date: false,
+      sec: 0,
+      min: 0,
+      hrs: 0,
     };
   }
   onHandleClick = () => {
     this.setState({ dark: !this.state.dark });
   };
+  componentDidMount() {
+    setInterval(() => {
+      const date = new Date();
+      let sec = date.getSeconds();
+      const min = date.getMinutes();
+      const hrs = date.getHours();
+      if (sec < 10) {
+        sec = `0${sec}`;
+      }
+      this.setState({ sec: sec, min: min, hrs: hrs });
+    }, 100);
+  }
   render() {
     const { dark } = this.state;
     const date = new Date();
@@ -33,7 +48,15 @@ class Fun extends React.Component {
         <div className="dateTime">
           {this.state.show && (
             <p>
-              Date:{today}/ {currentMonth} /{year}
+              <p>
+                Date: {today}/ {currentMonth} /{year}
+              </p>
+              <p>
+                Time:{" "}
+                <b>
+                  {this.state.hrs}:{this.state.min}: {this.state.sec}
+                </b>{" "}
+              </p>
             </p>
           )}
         </div>
@@ -45,7 +68,7 @@ class Fun extends React.Component {
               }}
             >
               {" "}
-              {!this.state.show ? `Show` : `Hide`}{" "}
+              {this.state.show ? `Show` : `Hide`}{" "}
             </span>
           </h2>
         </div>
