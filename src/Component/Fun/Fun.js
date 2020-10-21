@@ -6,7 +6,7 @@ class Fun extends React.Component {
     super(props);
     this.state = {
       dark: false,
-      show: false,
+      show: true,
       date: false,
       sec: 0,
       min: 0,
@@ -36,9 +36,7 @@ class Fun extends React.Component {
     const year = date.getFullYear();
     return (
       <div className={dark ? `fun-dark` : `fun`}>
-        <h1 className="fun-header">
-          <h2>{this.state.show && `JavaScript is Fun`}</h2>
-        </h1>
+        <h1 className="fun-header">{this.state.show && `JavaScript is Fun`}</h1>
         <div className="fun-main" onClick={this.onHandleClick}>
           <HiLightBulb size="3rem" color={dark ? `#ffe05d` : `black`} />
           <span>
@@ -68,7 +66,7 @@ class Fun extends React.Component {
               }}
             >
               {" "}
-              {this.state.show ? `Show` : `Hide`}{" "}
+              {!this.state.show ? `Show` : `Hide`}{" "}
             </span>
           </h2>
         </div>

@@ -2,11 +2,18 @@
   display: flex;
   justify-content: center;
   flex-direction: column;
-  width: 90%;
+  // width: 90%;
+  background: linear-gradient(
+    180deg,
+    rgba(61, 126, 166, 0.09287464985994398) 1%,
+    rgba(61, 126, 166, 0.22172619047619047) 6%,
+    rgba(61, 126, 166, 0.09287464985994398) 49%
+  );
   margin: auto;
   .project-head {
     h1 {
       margin: auto;
+      padding-top: 3rem;
       font-size: 2rem;
       text-align: center;
       font-family: montserrat;
@@ -22,10 +29,14 @@
     margin-top: 2rem;
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
     .One {
       align-self: center;
       li {
         border-top: 4px solid red;
+        border-bottom: 1px solid red;
+        border-left: 1px solid red;
+        border-right: 1px solid red;
         background-color: #ff00001a;
         .backed:hover {
           background-color: #ff0000;
@@ -39,16 +50,22 @@
       }
       .two1 {
         border-top: 4px solid blue;
+        border-bottom: 1px solid blue;
+        border-left: 1px solid blue;
+        border-right: 1px solid blue;
         background-color: #0000ff1a;
         .backed:hover {
           background-color: #0000ff;
         }
       }
       .two2 {
-        border-top: 4px solid peru;
-        background-color: #ff00ff1a;
+        border-top: 4px solid #cd853f;
+        border-bottom: 1px solid #cd853f;
+        border-left: 1px solid #cd853f;
+        border-right: 1px solid #cd853f;
+        background-color: #cd853f1a;
         .backed:hover {
-          background-color: #ff00ff;
+          background-color: rgb(205, 133, 63);
         }
       }
     }
@@ -56,6 +73,9 @@
       align-self: center;
       li {
         border-top: 4px solid #4caf50;
+        border-bottom: 1px solid #4caf50;
+        border-left: 1px solid #4caf50;
+        border-right: 1px solid #4caf50;
         background-color: #4caf501a;
         .backed:hover {
           background-color: #4caf50;
@@ -80,13 +100,22 @@
         height: 350px;
         background-color: transparent;
         color: transparent;
+        a {
+          text-decoration: none;
+          color: transparent;
+        }
       }
       transition: 1000 ease;
       .backed:hover {
         transition: 1000 ease;
-        h1 {
-          align-self: center;
+        a {
           color: #fff;
+          align-self: center;
+          font-size: 2rem;
+        }
+        h1 {
+          color: #fff;
+          align-self: center;
         }
         h2 {
           align-self: center;
@@ -105,6 +134,7 @@
       align-self: center;
       h3 {
         text-align: end;
+        padding: 1rem;
       }
       p {
         color: grey;
@@ -123,6 +153,9 @@
       li {
         width: 450px;
         height: 450px;
+        .backed {
+          height: 450px;
+        }
       }
     }
   }

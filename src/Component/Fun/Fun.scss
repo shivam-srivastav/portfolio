@@ -1,9 +1,14 @@
 .fun {
   position: relative;
-  height: 400px;
+  height: 300px;
   padding: 1rem;
   color: #181a1c;
-  background-color: rgb(236, 242, 246);
+  background: linear-gradient(
+    180deg,
+    rgba(61, 126, 166, 0.09287464985994398) 1%,
+    rgba(61, 126, 166, 0.22172619047619047) 6%,
+    rgba(61, 126, 166, 0.09287464985994398) 49%
+  );
   .dateTime {
     position: absolute;
     top: 50%;
@@ -46,7 +51,7 @@
   background: #181a1c;
   color: #ffe05d;
   position: relative;
-  height: 400px;
+  height: 300px;
   padding: 1rem;
   .fun-header {
     position: absolute;
@@ -79,6 +84,18 @@
       padding: 0.25rem;
       border-radius: 0.5rem;
       cursor: pointer;
+    }
+  }
+}
+@media (max-width: 470px) {
+  .fun {
+    .fun-header {
+      font-size: 1.3rem;
+    }
+  }
+  .fun-dark {
+    .fun-header {
+      font-size: 0.5rem;
     }
   }
 }

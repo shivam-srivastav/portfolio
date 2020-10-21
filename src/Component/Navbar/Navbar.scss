@@ -13,6 +13,10 @@
     transition: 300ms linear;
     color: #3d7ea6;
     cursor: default;
+    a {
+      text-decoration: none;
+      color: #3d7ea6;
+    }
     p {
       font-size: 1rem;
       margin: 0;
@@ -23,5 +27,10 @@
   }
   li:hover {
     border-bottom: 2px solid #3d7ea6;
+  }
+}
+@media (max-width: 470px) {
+  .navbar {
+    padding: 0.5rem 0.25rem 0.5rem 0.25rem;
   }
 }

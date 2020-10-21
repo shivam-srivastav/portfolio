@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { Link } from "react-router-dom";
 import "./Navbar.scss";
 class Navbar extends Component {
   constructor(props) {
@@ -9,16 +10,24 @@ class Navbar extends Component {
     return (
       <div className="navbar">
         <li>
-          <p>About</p>
+          <Link to="https://www.shivam-sr.com">
+            <p>About</p>
+          </Link>
         </li>
         <li>
-          <p>Project</p>
+          <Link to="https://github.com/shivam-srivastav">
+            <p>Project</p>
+          </Link>
         </li>
         <li>
-          <p>Connect</p>
+          <Link to="https://www.linkedin.com/in/shivam1534/">
+            <p>Connect</p>
+          </Link>
         </li>
         <li>
-          <p>Resume</p>
+          <Link to="/File/Experience.pdf" target="_blank" download>
+            <p>Resume</p>
+          </Link>
         </li>
       </div>
     );
