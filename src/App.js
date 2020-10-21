@@ -2,6 +2,7 @@ import React from "react";
 import { BrowserRouter as Router } from "react-router-dom";
 
 import Education from "./Component/Education/Education";
+import Footer from "./Component/Footer/Footer";
 import Fun from "./Component/Fun/Fun";
 import NameJson from "./Component/NameJson/NameJson";
 import Navbar from "./Component/Navbar/Navbar";
@@ -18,6 +19,7 @@ const App = () => {
         <Fun id="003" />
         <Project id="004" />
         <Education id="005" />
+        <Footer />
       </Router>
     </div>
   );
