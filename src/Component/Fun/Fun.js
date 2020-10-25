@@ -1,5 +1,5 @@
 import React from "react";
-import { HiLightBulb } from "react-icons/hi";
+// import { HiLightBulb } from "react-icons/hi";
 import "./Fun.scss";
 class Fun extends React.Component {
   constructor(props) {
@@ -38,7 +38,7 @@ class Fun extends React.Component {
       <div className={dark ? `fun-dark` : `fun`}>
         <h1 className="fun-header">{this.state.show && `JavaScript is Fun`}</h1>
         <div className="fun-main" onClick={this.onHandleClick}>
-          <HiLightBulb size="3rem" color={dark ? `#ffe05d` : `black`} />
+          {/* <HiLightBulb size="3rem" color={dark ? `#ffe05d` : `black`} /> */}
           <span>
             <p>{dark ? `  ON` : "  OFF"}</p>
           </span>

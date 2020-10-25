@@ -1,7 +1,11 @@
 import React, { Component } from "react";
 import "./Project.scss";
-import { FaSortAmountDownAlt, FaAdn, FaRobot } from "react-icons/fa";
-import { TiWeatherDownpour } from "react-icons/ti";
+import matic from "../../Assets/matic.svg";
+import sort from "../../Assets/sort.svg";
+import robot from "../../Assets/robofriends.svg";
+import weather from "../../Assets/weather.svg";
+// import { FaSortAmountDownAlt, FaAdn, FaRobot } from "react-icons/fa";
+// import { TiWeatherDownpour } from "react-icons/ti";
 class Project extends Component {
   constructor(props) {
     super(props);
@@ -25,8 +29,9 @@ class Project extends Component {
               <h1>Weather App</h1>
               <p>HTML5, CSS, VanillaJS </p>
               <h3>
-                <TiWeatherDownpour size={"5rem"} color="red" />
+                <img src={weather} alt="weather" />
               </h3>
+              {/* <h3><TiWeatherDownpour size={"5rem"} color="red" /></h3> */}
             </li>
           </div>
           <div className="Two">
@@ -39,7 +44,8 @@ class Project extends Component {
               <p>JSX,SCSS,ReactJS,Redux,Webpack</p>
               <p>* 2 Person involved</p>
               <h3>
-                <FaSortAmountDownAlt size={"5rem"} color="blue" />
+                {/* <FaSortAmountDownAlt size={"5rem"} color="blue" /> */}
+                <img src={sort} alt="sort"></img>
               </h3>
             </li>
             <li className="two2">
@@ -55,7 +61,8 @@ class Project extends Component {
               </p>
               <p>* 3 Person involved</p>
               <h3>
-                <FaAdn size={"5rem"} color="peru" />
+                {/* <FaAdn size={"5rem"} color="peru" /> */}
+                <img src={matic} alt="matic" />
               </h3>
             </li>
           </div>
@@ -68,7 +75,8 @@ class Project extends Component {
               <h1>Robofrinds </h1>
               <p>HTML, CSS, JavaScript, ReactJS</p>
               <h3>
-                <FaRobot size={"5rem"} color="4caf50" />
+                <img src={robot} alt="robot" />
+                {/* <FaRobot size={"5rem"} color="4caf50" /> */}
               </h3>
             </li>
           </div>

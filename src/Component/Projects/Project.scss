@@ -133,8 +133,13 @@
       flex-direction: column;
       align-self: center;
       h3 {
-        text-align: end;
-        padding: 1rem;
+        display: flex;
+        justify-content: flex-end;
+        img {
+          text-align: end;
+          width: 6rem;
+          padding: 1rem;
+        }
       }
       p {
         color: grey;

@@ -1,6 +1,8 @@
 import React, { Component } from "react";
 import "./NameJson.scss";
-import { AiFillGithub, AiFillLinkedin } from "react-icons/ai";
+// import { AiFillGithub, AiFillLinkedin } from "react-icons/ai";
+import gitHub from "../../Assets/github_badge.svg";
+import linkedin from "../../Assets/linkedin.svg";
 class NameJson extends Component {
   constructor(props) {
     super(props);
@@ -19,10 +21,12 @@ class NameJson extends Component {
         <div className="social">
           <a href="https://www.github.com/shivam-srivastav">
             {" "}
-            <AiFillGithub size="2rem" />
+            {/* <AiFillGithub size="2rem" /> */}
+            <img src={gitHub} alt="ico" />
           </a>
           <a href="https://www.linkedin.com/in/shivam1534/">
-            <AiFillLinkedin size="2rem" />
+            {/* <AiFillLinkedin size="2rem" /> */}
+            <img src={linkedin} alt="ico" />
           </a>
         </div>
         <div className="json">

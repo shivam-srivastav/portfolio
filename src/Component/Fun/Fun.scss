@@ -28,7 +28,9 @@
     cursor: pointer;
     width: 3rem;
     p {
+      padding: 1rem;
       margin-top: 0;
+      font-size: 2rem;
       margin-left: 0.5rem;
     }
   }
@@ -66,7 +68,10 @@
     cursor: pointer;
     width: 3rem;
     p {
+      padding: 1rem;
+      font-weight: 500;
       margin-left: 0.7rem;
+      font-size: 2rem;
       margin-top: 0;
     }
   }

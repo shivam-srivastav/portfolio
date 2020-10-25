@@ -26,6 +26,7 @@
     li {
       list-style: none;
       min-width: 350px;
+      padding-left: 2px;
       display: flex;
       flex-grow: 1;
       margin: 0.8rem;
@@ -35,6 +36,8 @@
 
       .js {
         background-color: black;
+        height: 49px;
+        align-self: center;
       }
       img {
         width: 3rem;
