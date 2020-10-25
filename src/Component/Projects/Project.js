@@ -45,7 +45,11 @@ class Project extends Component {
               <p>* 2 Person involved</p>
               <h3>
                 {/* <FaSortAmountDownAlt size={"5rem"} color="blue" /> */}
-                <img src={sort} alt="sort"></img>
+                <img
+                  src={sort}
+                  alt="sort"
+                  style={{ transform: "rotate(270deg)" }}
+                ></img>
               </h3>
             </li>
             <li className="two2">
